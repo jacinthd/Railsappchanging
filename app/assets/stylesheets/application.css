@@ -19,23 +19,23 @@
  	min-height: unset;
  }
  #bottom li{
-	display: inline-table;
-	min-width: 80px;
-}
- #bottom ul li{
 	display: block;
+	float:left;
+	margin-right: 10px;
+}
+
 }
 #bottom ol{
     margin: 0 0 0 10px;
 
  }
-/* #bottom ul{
-     border-right-color: black;
+ /*#bottom ul{
+   1 
     border-right-width: 5px;
-}
+}*/
 
 
-*/
+
  form label{
 	display: inline;
 	}
@@ -52,13 +52,13 @@
 }
 
 .first_fixed_bottom_bar{
-	height: 20px;
+	height: 25px;
 	border-style: inset;
 	border-color: #FF0066; /*dark-pink*/
-	margin-bottom:25px;
+	margin-bottom:30px;
 }
 .second_fixed_bottom_bar{
-	height: 20px;
+	height: 25px;
 	border-style: inset;
 	border-color: #FF0066;
 }
