@@ -51,27 +51,40 @@
 	height: 150px;
 }
 
+/* 	needed if both bars come dome down to the bottom. Note that these were written 
+/*	for div class=first_fixed_bottom_bar. They have been removed as they're unneccesary 
+
 .first_fixed_bottom_bar{
 	height: 25px;
 	border-style: inset;
-	border-color: #FF0066; /*dark-pink*/
-	margin-bottom:30px;
+	border-color: #FF0066;  /*dark-pink*/    
+/*	margin-bottom:30px;
 }
 .second_fixed_bottom_bar{
 	height: 25px;
 	border-style: inset;
 	border-color: #FF0066;
 }
+*/
 
 .image_for_bottom_bar{
 	height:25px;
 	width:25px;
 }
 
-#bottom_bar_1_text{
+.svg_red_onion{
+  width:25px;
+  height:25px;
+}
+
+#bottom_bar p{
 	color:red;
 }
 
-#bottom_bar_2_text{
+#top_bar p{
 	color:blue;
+}
+
+#for-space{
+	width:50px;
 }

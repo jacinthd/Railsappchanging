@@ -1,4 +1,3 @@
-<h1>News</h1>
 
 <!--<div class="container-fluid">
 	
@@ -8,8 +7,12 @@
 
 </div> 					-->		<!--figure out how to make this responsive, if possible-->
 
-<!--<a href="GreexPage-3.pdf">Click Me</a>
-<p><%=@pdf_filename %></p>-->
+
+<h3 class="text pull-right"><%= link_to('For older news, click on this link', {:controller => '/home', :action => 'pdfs'})%><h3>	
+
+<br><br>
+
+<h1>News for this month</h1>
 
 <object >
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">

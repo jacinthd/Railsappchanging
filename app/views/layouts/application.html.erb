@@ -119,19 +119,19 @@
 	</div>
 
 <div class="span2">
-	    <div class="well sidebar-nav services_sidebar">
-           	<ul class="nav nav-list">
-				<li class="nav-header"><%= link_to('Services', {:controller => '/home', :action => 'services'})%></li>
-				<li class="nav-header">Auctions</li>
-				<li><a href="#">Pakka Sale</a></li>
-				<li><a href="#">Marzi Sale</a></li>
-				<li><a href="#">Link</a></li>
-				<li class="nav-header">Transportation</li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-            </ul>
-        </div><!--/.well --> 
+	<div class="well sidebar-nav services_sidebar">
+        <ul class="nav nav-list">
+			<li class="nav-header"><%= link_to('Services', {:controller => '/home', :action => 'services'})%></li>
+			<li class="nav-header">Auctions</li>
+			<li><a href="#">Pakka Sale</a></li>
+			<li><a href="#">Marzi Sale</a></li>
+			<li><a href="#">Link</a></li>
+			<li class="nav-header">Transportation</li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>	
+        </ul>   	
+    </div><!--/.well --> 	    
 </div><!--/span-->
 
 
@@ -145,144 +145,141 @@
 	<%= bootstrap_flash %>
 <%= yield %>
 </div>
-<div id ="bottom" class="navbar navbar-fixed-bottom">
-	<div class="first_fixed_bottom_bar">
-			<div class="navbar-inner">
-				<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="5">
-					<div id="bottom_bar">
-						<ol>	
-							<li> 
-								<p id="bottom_bar_1_text">Tomato Red</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">BLR</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">10Rs/Kg</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-									<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>		
-							<li> 
-								<p id="bottom_bar_1_text">Pune</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">12Rs/Kg</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">NDL</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">15Rs/Kg</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">MUM</p>
-							</li>
-							<li>
-							 	<p id="bottom_bar_1_text">13Rs/Kg</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>
-						</ol>	
-					</div>
-											
-				</marquee>
-			</div>	
-	</div>	
-</div>
+<div id ="bottom" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="5">
+			<div id="top_bar">
+				<ol>	
+					<li> 
+						<p>Tomato Red</p>
+					</li>
+					<li> 
+						<p>BLR</p>
+					</li>
+					<li> 
+						<p>10Rs/Kg</p>
+					</li>
+					<li>
+						<div class="svg_red_onion">
+							<!--<%=image_tag("bananaImage.jpg", alt: "Image")%>-->
+							<%= render "layouts/redOnion" %>
+						</div>
+					</li>		
+					<li> 
+						<p>Pune</p>
+					</li>
+					<li> 
+						<p>12Rs/Kg</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>
+					<li> 
+						<p>NDL</p>
+					</li>
+					<li> 
+						<p>15Rs/Kg</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>
+					<li> 
+						<p>MUM</p>
+					</li>
+					<li>
+					 	<p>13Rs/Kg</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>
+				</ol>	
+			</div>	  <!--/top_bar-->											
+		</marquee>
+	</div>		<!--/navbar-inner-->		
+</div> <!--/bottom-->
 
 <div id ="bottom" class="navbar navbar-fixed-bottom">
-  	<div class="second_fixed_bottom_bar">	
-			<div class="navbar-inner">
-				<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="6">
-					<div id="bottom_bar">
-
-								<!--place, vegetable or fruit, amount, sale type, price if auction-->
-								
-						<ol>	
-							<li>
-								<div class="image_for_bottom_bar">
-									<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>		
-							<li> 
-								<p id="bottom_bar_1_text">JALGAON</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">BANANA-Robust</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">1 Ton</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_1_text">Free Sale</p>
-							</li>
-							<li>
-							 	<p id="bottom_bar_1_text">5Rs/Kg</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("bananaImage.jpg", alt: "Image")%>
-								</div>
-							</li>
-							
-							<!--space here-->
-							<li>
-								<div class="image_for_bottom_bar">
-									<%=image_tag("redOnion.jpeg", alt: "Image")%>
-								</div>
-							</li>		
-							<li> 
-								<p id="bottom_bar_2_text">PUNE</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_2_text">Onion Red</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("redOnion.jpeg", alt: "Image")%>
-								</div>
-							</li>
-							<li> 
-								<p id="bottom_bar_2_text">18 Ton</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_2_text">Auction</p>
-							</li>
-							<li> 
-								<p id="bottom_bar_2_text">2pm-25/6/2014</p>
-							</li>
-							<li>
-								<div class="image_for_bottom_bar">
-										<%=image_tag("redOnion.jpeg", alt: "Image")%>
-								</div>
-							</li>
-						</ol>	
-					</div>					
-				</marquee>
-			</div>
-  	</div>	
-</div>
+  	<div class="navbar-inner">
+		<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="6">
+			<div id="bottom_bar">
+			<!--below comment tells us what each rolling item needs-->	
+			<!--place, vegetable or fruit, amount, sale type, price if auction-->
+				<ol>	
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>		
+					<li> 
+						<p>JALGAON</p>
+					</li>
+					<li> 
+						<p>BANANA-Robust</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>
+					<li> 
+						<p>1 Ton</p>
+					</li>
+					<li> 
+						<p>Free Sale</p>
+					</li>
+					<li>
+					 	<p>5Rs/Kg</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+						</div>
+					</li>
+					<li><div class="svg_red_onion"></div></li>	
+					<li><div class="svg_red_onion"></div></li>	
+					<li><div class="svg_red_onion"></div></li>	
+		<!--Extremely dirty way to get some space between logically separated lists. Putting them in separate lists introduces too much space. <br> doesn't work either.-->			
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("redOnion.jpeg", alt: "Image")%>
+						</div>
+					</li>		
+					<li> 
+						<p>PUNE</p>
+					</li>
+					<li> 
+						<p>Onion Red</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("redOnion.jpeg", alt: "Image")%>
+						</div>
+					</li>
+					<li> 
+						<p>18 Ton</p>
+					</li>
+					<li> 
+						<p>Auction</p>
+					</li>
+					<li> 
+						<p>2pm-25/6/2014</p>
+					</li>
+					<li>
+						<div class="image_for_bottom_bar">
+							<%=image_tag("redOnion.jpeg", alt: "Image")%>
+						</div>
+					</li>		
+				</ol>	
+			</div>	<!--/bottom_bar-->				
+		</marquee>
+	</div>  <!--/navbar-inner-->		
+</div> <!--/bottom-->
 
 </body>
 </html>
