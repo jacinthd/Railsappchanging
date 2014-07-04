@@ -25,12 +25,10 @@
 }
 
 }
-#bottom ol{
+/*#bottom ol{
     margin: 0 0 0 10px;
-
  }
- /*#bottom ul{
-   1 
+#bottom ul{ 
     border-right-width: 5px;
 }*/
 
@@ -51,8 +49,8 @@
 	height: 150px;
 }
 
-/* 	needed if both bars come dome down to the bottom. Note that these were written 
-/*	for div class=first_fixed_bottom_bar. They have been removed as they're unneccesary 
+/* 	Needed if both bars come dome down to the bottom. Note that these were written for 
+	div class=first_fixed_bottom_bar. The <div> has been removed from app.html.erb 
 
 .first_fixed_bottom_bar{
 	height: 25px;
@@ -72,7 +70,7 @@
 	width:25px;
 }
 
-.svg_red_onion{
+.scroll_bar_svg{
   width:25px;
   height:25px;
 }
@@ -85,6 +83,7 @@
 	color:blue;
 }
 
-#for-space{
-	width:50px;
+/*might be needed later*/
+#change_scroll_color marquee{
+	/*background-color: #FF85D6; /*rgb(100,200,75);*/
 }

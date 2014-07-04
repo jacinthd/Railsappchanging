@@ -79,10 +79,8 @@
 						<li class=" <%= (@navbar == "news") ? "active" : nil %>"><%= link_to('News', {:controller => '/home', :action => 'news'})%></li>
 						<li class=" <%= (@navbar == "aboutUs") ? "active" : nil %>"><%= link_to('About Us', {:controller => '/home', :action => 'aboutUs'})%></li>
 						<li class=" <%= (@navbar == "contactUs") ? "active" : nil %>"><%= link_to('Contact Us', {:controller => '/home', :action => 'contactUs'})%></li>
-						<!--<div class="clearFloat"></div>-->
 						<li class="divider"></li>
 						</ul>
-						<!--<div id="user_nav">-->
 						<ul class=" nav pull-right">
 						<% if user_signed_in? %> 
 							<p class="navbar-text pull-right">Signed in as <%= current_user.email %></p>
@@ -111,8 +109,6 @@
 						</div>
 						<% end %>
 						</ul>
-					
-					
 			   	</div>
 			</div>
 		</div>
@@ -147,6 +143,7 @@
 </div>
 <div id ="bottom" class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
+		<div id="change_scroll_color">
 		<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="5">
 			<div id="top_bar">
 				<ol>	
@@ -160,9 +157,8 @@
 						<p>10Rs/Kg</p>
 					</li>
 					<li>
-						<div class="svg_red_onion">
-							<!--<%=image_tag("bananaImage.jpg", alt: "Image")%>-->
-							<%= render "layouts/redOnion" %>
+						<div class="scroll_bar_svg">
+							<%= render "layouts/redTomato" %>
 						</div>
 					</li>		
 					<li> 
@@ -173,7 +169,7 @@
 					</li>
 					<li>
 						<div class="image_for_bottom_bar">
-							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+							<%=image_tag("redTomato.jpg", alt: "Image")%>
 						</div>
 					</li>
 					<li> 
@@ -184,7 +180,7 @@
 					</li>
 					<li>
 						<div class="image_for_bottom_bar">
-							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+							<%=image_tag("redTomato.jpg", alt: "Image")%>
 						</div>
 					</li>
 					<li> 
@@ -195,13 +191,14 @@
 					</li>
 					<li>
 						<div class="image_for_bottom_bar">
-							<%=image_tag("bananaImage.jpg", alt: "Image")%>
+							<%=image_tag("redTomato.jpg", alt: "Image")%>
 						</div>
 					</li>
 				</ol>	
 			</div>	  <!--/top_bar-->											
 		</marquee>
-	</div>		<!--/navbar-inner-->		
+	</div>		<!--change_scroll_color-->
+	</div>	<!--/navbar-inner-->		
 </div> <!--/bottom-->
 
 <div id ="bottom" class="navbar navbar-fixed-bottom">
@@ -241,9 +238,9 @@
 							<%=image_tag("bananaImage.jpg", alt: "Image")%>
 						</div>
 					</li>
-					<li><div class="svg_red_onion"></div></li>	
-					<li><div class="svg_red_onion"></div></li>	
-					<li><div class="svg_red_onion"></div></li>	
+					<li><div class="scroll_bar_svg"></div></li>	
+					<li><div class="scroll_bar_svg"></div></li>	
+					<li><div class="scroll_bar_svg"></div></li>	
 		<!--Extremely dirty way to get some space between logically separated lists. Putting them in separate lists introduces too much space. <br> doesn't work either.-->			
 					<li>
 						<div class="image_for_bottom_bar">
@@ -271,8 +268,8 @@
 						<p>2pm-25/6/2014</p>
 					</li>
 					<li>
-						<div class="image_for_bottom_bar">
-							<%=image_tag("redOnion.jpeg", alt: "Image")%>
+						<div class="scroll_bar_svg">
+							<%= render "layouts/redOnion" %>
 						</div>
 					</li>		
 				</ol>	
