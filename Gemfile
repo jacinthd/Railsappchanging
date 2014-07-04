@@ -16,7 +16,7 @@ end
 gem 'devise'
 gem "therubyracer"
 gem "less-rails"
-#gem 'yui-compressor', '~> 0.12.0'
+gem 'yui-compressor', '~> 0.12.0'
 gem "sass-rails"
 gem 'twitter-bootstrap-rails'
 # Use Uglifier as compressor for JavaScript assets
