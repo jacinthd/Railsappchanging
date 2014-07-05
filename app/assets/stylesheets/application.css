@@ -85,5 +85,9 @@
 
 /*might be needed later*/
 #change_scroll_color marquee{
-	/*background-color: #FF85D6; /*rgb(100,200,75);*/
+	background-color: #C2C2A3; /*rgb(100,200,75);*/
+}
+
+#scroll_bar_2 marquee{
+	background-color: #C2C2A3; /*#FF66FF;*/
 }

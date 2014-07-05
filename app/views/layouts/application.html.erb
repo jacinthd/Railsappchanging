@@ -42,7 +42,7 @@
 		<%=image_tag("green_banner.jpg", class: "banner") %>
 	</div>
 
-	<div class="navbar top navbar-inverse">
+	<div class="navbar top navbar">
       	<div class="navbar-inner">
 	        <div class="container-fluid">
 	           <a type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -144,7 +144,7 @@
 <div id ="bottom" class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div id="change_scroll_color">
-		<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="5">
+		<marquee behavior="scroll" direction="right" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="5">
 			<div id="top_bar">
 				<ol>	
 					<li> 
@@ -203,6 +203,7 @@
 
 <div id ="bottom" class="navbar navbar-fixed-bottom">
   	<div class="navbar-inner">
+  		<div id="scroll_bar_2">
 		<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="6">
 			<div id="bottom_bar">
 			<!--below comment tells us what each rolling item needs-->	
@@ -275,6 +276,7 @@
 				</ol>	
 			</div>	<!--/bottom_bar-->				
 		</marquee>
+	</div> <!--scroll_bar_2-->
 	</div>  <!--/navbar-inner-->		
 </div> <!--/bottom-->
 

@@ -8,7 +8,7 @@
 </div> 					-->		<!--figure out how to make this responsive, if possible-->
 
 
-<h3 class="text pull-right"><%= link_to('News Library', {:controller => '/home', :action => 'pdfs'})%><h3>	
+<h3 id="pdfslink" class="text pull-right"><%= link_to('News Library', {:controller => '/home', :action => 'pdfs'})%><h3>	
 
 <br><br>
 
@@ -481,4 +481,16 @@ a#page_2 #dimg1 #img1 {width:723px;height:760px;}
 
 	
 </object>
+
+<style>
+#pdfslink:hover:after {
+	font-size: 12px;
+    content: "click here for other editions";
+    position: absolute;
+    background: white; /*#B8B894;*/
+    color: rgb(51,51,51);
+    /*float:left;*/
+    /*display:block;*/
+}
+</style>
 
