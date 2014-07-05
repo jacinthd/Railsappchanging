@@ -83,11 +83,10 @@
 	color:blue;
 }
 
-/*might be needed later*/
-#change_scroll_color marquee{
+#top_bar marquee{
 	background-color: #C2C2A3; /*rgb(100,200,75);*/
 }
 
-#scroll_bar_2 marquee{
+#bottom_bar marquee{
 	background-color: #C2C2A3; /*#FF66FF;*/
 }
